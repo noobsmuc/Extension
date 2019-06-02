@@ -15,9 +15,17 @@ namespace NoobsMuc.Extension
         }
 
         [Test]
-        public void ReplaceExactWord_StringToReplaceWithXmlSigns_ReturnStringWithTheReplacedWord()
+        public void ReplaceExactWord_StringToReplaceWithXmlSigns_ReturnStringNotChanged()
         {
-            InputString.ReplaceExactWord(">=", "!=").Should().Be("Add != Additional < String");
+            InputString.ReplaceExactWord(">=", "!=").Should().Be("Add >= Additional < String");
+        }
+
+        [Test]
+        public void ReplaceExactWord_StringToReplaceWithXmlSignsInWord_ReturnStringWithTheReplacedWord()
+        {
+            "Add >= Additonal a>=w32 String"
+                .ReplaceExactWord("a>=w32", "b!ds§").
+                Should().Be("Add >= Additonal b!ds§ String");
         }
 
         [Test]
