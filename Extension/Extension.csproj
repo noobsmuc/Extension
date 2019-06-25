@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;netstandard1.5;netstandard2.0;net45;net461</TargetFrameworks>
     <IncludeSymbols>True</IncludeSymbols>
-    <PackageVersion>2.1.0</PackageVersion>
+    <PackageVersion>2.2.0</PackageVersion>
     <title>C# Linq Extensions</title>
     <Authors>Dominik Lindemann / Axel Katzur</Authors>
     <Description>C# Linq extension with given error messages</Description>
