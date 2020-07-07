@@ -17,6 +17,12 @@
     <RootNamespace>NoobsMuc.Extension</RootNamespace>
     <PackageReleaseNotes>add string extension</PackageReleaseNotes>
     <PackageIconUrl>https://de.gravatar.com/userimage/125252678/6ee38e8da9120e8394a092de4d5c4849</PackageIconUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
 
 </Project>
