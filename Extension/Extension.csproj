@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;netstandard1.5;netstandard2.0;net45;net461</TargetFrameworks>
     <IncludeSymbols>True</IncludeSymbols>
-    <PackageVersion>2.2.0</PackageVersion>
+    <PackageVersion>2.2.1</PackageVersion>
     <title>C# Linq Extensions</title>
     <Authors>Dominik Lindemann / Axel Katzur</Authors>
     <Description>C# Linq extension with given error messages</Description>
-    <Copyright>Copyright 2018 (c). All rights reserved.</Copyright>
+    <Copyright>Copyright 2018 - 2020 (c). All rights reserved.</Copyright>
     <PackageTags>linq extension error exception NETStandard C# .net string</PackageTags>
     <PackageLicenseUrl>http://choosealicense.com/licenses/bsd-2-clause/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/noobsmuc/Extension</PackageProjectUrl>
@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <AssemblyName>NoobsMuc.Extension</AssemblyName>
     <RootNamespace>NoobsMuc.Extension</RootNamespace>
-    <PackageReleaseNotes>add string extension</PackageReleaseNotes>
+    <PackageReleaseNotes>add source link</PackageReleaseNotes>
     <PackageIconUrl>https://de.gravatar.com/userimage/125252678/6ee38e8da9120e8394a092de4d5c4849</PackageIconUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
