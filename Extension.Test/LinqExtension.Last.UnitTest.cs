@@ -24,7 +24,7 @@ namespace NoobsMuc.Extension
             string message = "user error message";
             Action act = () => m_DataList.Last(message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
 
         [Test]
@@ -33,7 +33,7 @@ namespace NoobsMuc.Extension
             string message = "user filter 66 error message";
             Action act = () => m_DataList.Last(x => x == 66, message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
 
         [Test]

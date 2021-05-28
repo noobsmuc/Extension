@@ -6,11 +6,11 @@ String Implemented: Left, Right
 Stopwatch: ToFormatedString
 
 ## Available for:
+- .NET 5.0
 - .NET Standard 2.0
 - .NET Standard 1.5
 - .NET Standard 1.3
 - .NET 4.6.1
-- .NET 4.5
 
 ## Example Linq:
 ```csharp

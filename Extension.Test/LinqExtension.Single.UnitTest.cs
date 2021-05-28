@@ -23,7 +23,7 @@ namespace NoobsMuc.Extension
             string message = "user error message";
             Action act = () => m_DataList.Single(message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
 
         [Test]
@@ -32,7 +32,7 @@ namespace NoobsMuc.Extension
             string message = "user filter 42 error message";
             Action act = () => m_DataList.Single(x => x == 42, message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
 
         [Test]
@@ -79,7 +79,7 @@ namespace NoobsMuc.Extension
             string message = "user SingleOrDefaulterror message";
             Action act = () => m_DataList.SingleOrDefault(x => x == 4 || x == 5, message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace NoobsMuc.Extension
             string message = "user SingleOrDefaulterror message";
             Action act = () => m_DataList.SingleOrDefault(message);
 
-            act.ShouldThrow<InvalidOperationException>().WithMessage(message);
+            act.Should().Throw<InvalidOperationException>().WithMessage(message);
         }
     }
 }

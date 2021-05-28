@@ -23,20 +23,20 @@ namespace NoobsMuc.Extension
         public void Stopwatch_EmptyFormat_ThrowsArgumentException()
         {
             Action act = () => m_Stopwatch.ToFormatedString(string.Empty);
-            act.ShouldThrow<ArgumentException>();
+            act.Should().Throw<ArgumentException>();
         }
 
         [Test]
         public void Stopwatch_WrongFormat_ThrowsFormatException()
         {
             Action act = () => m_Stopwatch.ToFormatedString("wrongFormat");
-            act.ShouldThrow<FormatException>();
+            act.Should().Throw<FormatException>();
         }
 
         [Test]
         public void Stopwatch_Format_ReturnsFormatedString()
         {
-            m_Stopwatch.ToFormatedString("g").Should().Be("0:00:01,5");
+            m_Stopwatch.ToFormatedString("g").Should().StartWith("0:00:01,");
         }
 
         [Test]
