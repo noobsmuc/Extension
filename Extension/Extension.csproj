@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;netstandard1.5;netstandard2.0;net50;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net48;net60;net70</TargetFrameworks>
     <IncludeSymbols>True</IncludeSymbols>
-    <PackageVersion>2.3.0</PackageVersion>
+    <PackageVersion>2.4.0</PackageVersion>
     <title>C# Linq Extensions</title>
     <Authors>Dominik Lindemann / Axel Katzur</Authors>
     <Description>C# Linq extension with given error messages</Description>
@@ -15,14 +15,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <AssemblyName>NoobsMuc.Extension</AssemblyName>
     <RootNamespace>NoobsMuc.Extension</RootNamespace>
-    <PackageReleaseNotes>add source link</PackageReleaseNotes>
+    <PackageReleaseNotes>add support net7 + net6 + 4.8, remove netstandard1.3, netstandard1.5, net5 and 4.6.1 (eos)</PackageReleaseNotes>
     <PackageIconUrl>https://de.gravatar.com/userimage/125252678/6ee38e8da9120e8394a092de4d5c4849</PackageIconUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
