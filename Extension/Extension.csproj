@@ -7,7 +7,7 @@
     <title>C# Linq Extensions</title>
     <Authors>Dominik Lindemann / Axel Katzur</Authors>
     <Description>C# Linq extension with given error messages</Description>
-    <Copyright>Copyright 2018 - 2021 (c). All rights reserved.</Copyright>
+    <Copyright>Copyright 2018 - 2023 (c). All rights reserved.</Copyright>
     <PackageTags>linq extension error exception NETStandard C# .net string</PackageTags>
     <PackageLicenseUrl>http://choosealicense.com/licenses/bsd-2-clause/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/noobsmuc/Extension</PackageProjectUrl>
