@@ -6,7 +6,7 @@ String Implemented: Left, Right
 Stopwatch: ToFormatedString
 
 ## Available for:
-- .NET 7.0
+- .NET 8.0
 - .NET 6.0
 - .NET Standard 2.0
 - .NET 4.8
