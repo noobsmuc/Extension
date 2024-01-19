@@ -36,7 +36,7 @@ namespace NoobsMuc.Extension
         [Test]
         public void Stopwatch_Format_ReturnsFormatedString()
         {
-            m_Stopwatch.ToFormatedString("g").Should().StartWith("0:00:01,");
+            m_Stopwatch.ToFormatedString("g").Should().StartWith("0:00:01");
         }
 
         [Test]

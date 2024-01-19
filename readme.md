@@ -1,7 +1,7 @@
 ## C# Linq + String Extensions ##
 
 Here is an Linq extension which returns your custom error message in cause of an exception.
-Linq Implemented: First, Last, Single
+Linq Implemented: First, Last, Single, MinOrDefault
 String Implemented: Left, Right
 Stopwatch: ToFormatedString
 
@@ -15,6 +15,11 @@ Stopwatch: ToFormatedString
 ```csharp
 	List<string> newList = new List<string> {"1234", "987654"};
 	newList.SingleOrDefault(x => x == "searchString", "custom error message e.g. search string mot in list");
+```
+
+```csharp
+	List<int> newList = new List<int> {1234, 987654};
+	newList.Select(x => x).MinOrDefault();
 ```
 
 ## Example String:

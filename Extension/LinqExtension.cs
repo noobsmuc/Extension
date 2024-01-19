@@ -6,6 +6,18 @@ namespace NoobsMuc.Extension
 {
     public static class Linq
     {
+        public static T MinOrDefault<T>(this IEnumerable<T> source)
+        {
+            if (source.Any())
+            {
+                return source.Min<T>();
+            }
+            else
+            {
+                return default(T);
+            }
+        }
+
         public static T Single<T>(this IEnumerable<T> source, string errorMessage)
         {
             return Execute(source.Single, errorMessage);
