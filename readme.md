@@ -1,7 +1,7 @@
 ## C# Linq + String Extensions ##
 
 Here is an Linq extension which returns your custom error message in cause of an exception.
-Linq Implemented: First, Last, Single, MinOrDefault
+Linq Implemented: First, Last, Single, MinOrDefault, MaxOrDefault, AverageOrDefault
 String Implemented: Left, Right
 Stopwatch: ToFormatedString
 
@@ -20,6 +20,16 @@ Stopwatch: ToFormatedString
 ```csharp
 	List<int> newList = new List<int> {1234, 987654};
 	newList.Select(x => x).MinOrDefault();
+```
+
+```csharp
+	var dataList = new List<decimal>() { 15.2M, 18.6M, 55.23M };
+	var result = dataList.Select(x => x).MaxOrDefault();
+```
+
+```csharp
+    var dataList = new List<decimal>() { 15.2M, 18.6M, 55.23M };
+    var result = dataList.Select(x => x).AverageOrDefault();
 ```
 
 ## Example String:
