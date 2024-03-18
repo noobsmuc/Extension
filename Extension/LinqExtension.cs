@@ -177,6 +177,20 @@ namespace NoobsMuc.Extension
 
         #endregion AverageOrDefault
 
+        #region Highlander
+        const string ErrorMessageStarte = "There can only be one MacLeod. ";
+        public static T Highlander<T>(this IEnumerable<T> source, string errorMessage)
+        {
+            return Execute(source.Single, ErrorMessageStarte + errorMessage);
+        }
+
+        public static T Highlander<T>(this IEnumerable<T> source, Func<T, bool> predicate, string errorMessage)
+        {
+            return Execute(() => source.Single(predicate), ErrorMessageStarte + errorMessage);
+        }
+
+        #endregion Highlander
+
         public static T Single<T>(this IEnumerable<T> source, string errorMessage)
         {
             return Execute(source.Single, errorMessage);

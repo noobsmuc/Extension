@@ -5,6 +5,8 @@ Linq Implemented: First, Last, Single, MinOrDefault, MaxOrDefault, AverageOrDefa
 String Implemented: Left, Right
 Stopwatch: ToFormatedString
 
+For funny reason you can use Highlander instead of Single :)
+
 ## Available for:
 - .NET 8.0
 - .NET 6.0

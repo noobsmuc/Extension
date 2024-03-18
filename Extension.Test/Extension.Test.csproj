@@ -107,6 +107,7 @@
     <Compile Include="LinqExtension.Last.UnitTest.cs" />
     <Compile Include="LinqExtension.AverageOrDefault.UnitTest.cs" />
     <Compile Include="LinqExtension.MaxOrDefault.UnitTest.cs" />
+    <Compile Include="LinqExtension.HighlanderUnitTest.cs" />
     <Compile Include="LinqExtension.Single.UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
